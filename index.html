@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meu Solo Saudável - Guia do Iniciante</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <nav>
+        <div class="logo">🌱 AgroSustentável</div>
+    </nav>
+
+    <header class="hero">
+        <h1>O que o seu solo está tentando te dizer?</h1>
+        <p>Aprenda a cuidar da terra para colher alimentos saudáveis e proteger a natureza.</p>
+    </header>
+
+    <main class="container">
+        <article class="post">
+            <h2>Por que o Solo é importante?</h2>
+            <p>Imagine o solo como a "cozinha" das plantas. Se a cozinha está suja ou sem ingredientes, a planta não cresce. Um <strong>Agro Forte</strong> começa com um solo vivo!</p>
+            
+            <h3>O que é pH?</h3>
+            <p>Pense no pH como o "tempero" da terra. Se estiver muito azedo (ácido) ou muito amargo (alcalino), as plantas não conseguem "comer" os nutrientes. O ideal é que seja equilibrado.</p>
+
+            <h3>O que é Matéria Orgânica?</h3>
+            <p>São restos de folhas, raízes e bichinhos que viram adubo natural. É como a reserva de energia da terra.</p>
+        </article>
+
+        <section class="calculator-box">
+            <h2>🧪 Teste seu Conhecimento</h2>
+            <p>Se você tem um laudo da sua terra ou quer simular, use nossa ferramenta:</p>
+            
+            <div class="input-field">
+                <label>Como está o pH da terra? (0 a 14)</label>
+                <input type="number" id="ph" step="0.1" placeholder="Ex: 6.0">
+                <small>Dica: 6.0 é um número excelente!</small>
+            </div>
+
+            <div class="input-field">
+                <label>Nível de Matéria Orgânica (%)</label>
+                <input type="number" id="organica" step="0.1" placeholder="Ex: 3.5">
+            </div>
+
+            <button onclick="analisarSolo()">Ver Diagnóstico Simples</button>
+        </section>
+
+        <section id="resultado" class="result-card hidden"></section>
+    </main>
+
+    <footer>
+        <p>Projeto Agrinho 2026 - Sustentabilidade na Prática</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
